@@ -3,86 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Catálogo | Iplipse</title>
 </head>
 
 <body>
-    <header class="fondoazul">
-        <div>
-            <a href="../index.html"><img class="logo" src="../img/logo.png" alt="logo iplipse"></a>
-        </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="#">Catálogo</a>
-                </li>
-                <li>
-                    <a href="./servicios.html">Servicios</a>
-                </li>
-                <li>
-                    <a href="./nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg fondoazul fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="logo" src="../img/logo.png" alt="logo iplipse"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link navText" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active navText" aria-current="page" href="#">Catálogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navText" href="./servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navText" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navText" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        <section>
-            <h1 class="zilla">Catálogo</h1>
-            <div>
-                <input type="search" name="buscar" id="buscar" placeholder="Buscar">
-                <img src="../img/lupa.png" alt="Buscar">
+        <h1 class="pesada zilla">Catálogo</h1>
+        <section class="container text-stretch">
+            <div class="row">
+                <div class="col-lg-3">
+                    <form class="d-flex search" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
+                            <label class="form-check-label stretched-link" for="firstCheckboxStretched">Arte y Diseño</label>
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxStretched">
+                            <label class="form-check-label stretched-link" for="secondCheckboxStretched">Cs. Naturales</label>
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxStretched">
+                            <label class="form-check-label stretched-link" for="thirdCheckboxStretched">Computación</label>
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="fourthCheckboxStretched">
+                            <label class="form-check-label stretched-link" for="fourthCheckboxStretched">Derecho</label>
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="fifthCheckboxStretched">
+                            <label class="form-check-label stretched-link" for="fifthCheckboxStretched">Ficción</label>
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="sixthCheckboxStretched">
+                            <label class="form-check-label stretched-link" for="sixthCheckboxStretched">Humanidades</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-9">
+                    <div class="row">
+                            <img class="cataImages" src="../img/librobrochure.jpg" alt="Libro Brouchure">
+                            <img class="cataImages" src="../img/libroconcept.jpg" alt="Libro Concept">
+                            <img class="cataImages" src="../img/libroidentity.jpg" alt="Libro Identity">                
+                            <img class="cataImages" src="../img/libroproject.jpg" alt="Libro Project">
+                            <img class="cataImages" src="../img/librostory.jpg" alt="Libro Story">
+                            <img class="cataImages" src="../img/librothecover.jpg" alt="Libro Cover">
+                    </div>
+                </div>
             </div>
-            <ul class="azul roboto">
-                <li>Genero A</li>
-                <li>Genero B</li>
-                <li>Genero C</li>
-                <li>Genero D</li>
-                <li>Genero E</li>
-                <li>Genero F</li>
-                <li>Genero G</li>
-                <li>Genero H</li>
-            </ul>
-            <div>
-                <img src="../img/librobrochure.jpg" alt="Libro Brouchure">
-                <img src="../img/libroconcept.jpg" alt="Libro Concept">
-                <img src="../img/libroidentity.jpg" alt="Libro Identity">                
-                <img src="../img/libroproject.jpg" alt="Libro Project">
-                <img src="../img/librostory.jpg" alt="Libro Story">
-                <img src="../img/librothecover.jpg" alt="Libro Cover">
-            </div>
+
         </section>
-    </main>
-    <footer class="fondoazul">
         <div>
-            <ul>
-                <li>
-                    <a href="https://www.instagram.com" target="_blank"><img src="../img/instagram.png" alt="Instagram"></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><img class="logoWA" src="../img/whatsapp.png" alt="whatsapp"></a>
+        </div>
+    </main>
+    <footer class="fondoazul footerFlex">
+        <div>
+            <ul class="media">
+                <li class="redesSociales">
+                    <a href="https://www.instagram.com" target="_blank"><img class="logoSocial" src="../img/instagram.png" alt="Instagram"></a>
                 </li>
-                <li>
-                    <a href="https://www.linkedin.com/" target="_blank"><img src="../img/linkedin.png" alt="Linkedin"></a>
+                <li class="redesSociales">
+                    <a href="https://www.linkedin.com/" target="_blank"><img class="logoSocial" src="../img/linkedin.png" alt="Linkedin"></a>
                 </li>
-                <li>
-                    <a href="https://www.facebook.com" target="_blank"><img src="../img/facebook.png" alt="Facebook"></a>
+                <li class="redesSociales">
+                    <a href="https://www.facebook.com" target="_blank"><img class="logoSocial" src="../img/facebook.png" alt="Facebook"></a>
+                </li>
+                <li class="redesSociales">
+                    <a href="mailto:iplipse@gmail.com"><img class="logoSocial" src="../img/mail.png" alt="email"></a>
                 </li>
             </ul>
         </div>
         <div>
-            <img src="../img/whatsapp.png" alt="whatsapp">
-            <h3>54 911 1234 5678</h3>
-            <img src="../img/mail.png" alt="email">
-            <h3>iplipse@gmail.com</h3>
+            <h3 class="tm">iplipse</h3>
         </div>
         <div>
-            <img src="../img/logoi.png" alt="logo menor">
+            <img class="logoMenor" src="../img/logoi.png" alt="logo menor">
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>
