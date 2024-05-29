@@ -1,28 +1,24 @@
-.logoSocial{
-    width: 40px;
+footer {
+    .media {
+        display: flex;
+        justify-content: space-around;
+        .redesSociales {
+            margin: 5%;
+            .logoSocial {
+                width: 40px;
+            }
+        }
+    }
+    .logoMenor {
+        width: 100px;
+        padding: 20%;
+    }
 }
-.logoWA{
-    width: 80px;
-    position: fixed;
-    right: 15px;
-    bottom: 120px;
-}
-.logoMenor{
-    width: 100px;
-    padding: 20%;
-}
-.media{
-    display: flex;
-    justify-content: space-around;
-}
-.footerFlex{
+.footerFlex {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     bottom: 0px;
     margin-top: 2%;
-}
-.redesSociales{
-    margin: 5%;
 }

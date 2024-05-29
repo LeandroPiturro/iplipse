@@ -1,0 +1,7 @@
+@mixin grid ($grid-temp-row, $grid-temp-col, $rowgap, $colgap){
+    display: grid;
+    grid-template-rows: $grid-temp-row;
+    grid-template-columns: $grid-temp-col;
+    grid-row-gap: $rowgap;
+    grid-column-gap: $colgap;
+}

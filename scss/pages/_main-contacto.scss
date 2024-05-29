@@ -5,15 +5,9 @@
     height: 1080px;
 }
 .gridContacto{
+    @include grid(auto auto, 1fr 1fr, 0, 10px);
     margin: 5% 5% 1% 5%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    grid-column-gap: 10px;
 }
 .gridInput{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5, 40px);
-    grid-row-gap: 5px;
+    @include grid(repeat(5, 40px), 1fr 1fr, 5px, 0);
 }
