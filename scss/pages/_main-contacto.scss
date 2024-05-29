@@ -1,0 +1,19 @@
+.contactoFondo{
+    background-image: url(../img/fondoContacto.jpg);
+    margin-bottom: -2%;
+    padding: 2%;
+    height: 1080px;
+}
+.gridContacto{
+    margin: 5% 5% 1% 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-column-gap: 10px;
+}
+.gridInput{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 40px);
+    grid-row-gap: 5px;
+}
