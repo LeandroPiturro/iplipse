@@ -1,10 +1,36 @@
-.serviciosBox{
-    border-style: solid;
-    border-color: black;
-    margin: 5px;
-    padding-top: 10%;
-    border-radius: 25px;
-}
-.serviciosH:hover{
-    background-color:rgba(138, 138, 138, 0.673);
+main {
+        .serviciosBox{
+            border-style: solid;
+            border-color: black;
+            margin: 5px;
+            padding-top: 10%;
+            border-radius: 25px;
+        }
+        section{
+            &.serviciosH{
+                clip-path: circle(100%);
+                transition: clip-path 1s ease-in-out 5ms;
+                &:hover{
+                    background: none;
+                    background-color:$iplipse-grey;
+                    border-style: none;
+                    clip-path: circle(50%);
+                }
+                &h2{
+                    color: $iplipse-darkblue;
+                }
+                &p{
+                    color: $iplipse-blue;
+                }
+            }
+            &.g-radial{
+                background: radial-gradient(circle, $iplipse-purple, $iplipse-blue, $iplipse-darkblue);
+            }
+            &.g-linearV{
+                background: linear-gradient(to bottom, $iplipse-darkblue,$iplipse-lightblue);
+            }
+            &.g-linearH{
+                background: linear-gradient(to right, $iplipse-purple,$iplipse-white);
+            }
+        }
 }

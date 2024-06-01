@@ -1,14 +1,19 @@
-.nosotros{
-    padding: 50% 2% 2% 2%;
-}
-.centradoFlex{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 3%;
-    flex-direction: column;  
-}
-.centrado{
-    text-align: center;
-    margin-top: 3%;
+main{
+    .nosotros{
+        padding: 50% 2% 2% 2%;
+    }
+    .centradoFlex{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 3%;
+        flex-direction: column;  
+    }
+    .centrado{
+        text-align: center;
+        margin-top: 3%;
+    }
+    .fondo{
+        background-color: $iplipse-lightblue;
+    }
 }

@@ -8,6 +8,13 @@
 header .logo {
   width: 200px;
   margin: 1.5% 1%;
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 5ms;
+}
+header .logo:hover {
+  transform: rotate(-8deg);
 }
 header .navText {
   font-size: x-large;
@@ -28,6 +35,7 @@ footer .media .redesSociales .logoSocial {
 footer .logoMenor {
   width: 100px;
   padding: 20%;
+  animation: logoMenor-giro 5s infinite;
 }
 
 .footerFlex {
@@ -75,6 +83,7 @@ h1 {
 
 .fondoazul {
   background-color: #2196F3;
+  height: 120px;
 }
 
 .mediana {
@@ -114,6 +123,17 @@ h1 {
   bottom: 120px;
 }
 
+@keyframes logoMenor-giro {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(0deg) scale(1.07);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
 .cataImages {
   width: 45%;
   padding: 2%;
@@ -175,33 +195,55 @@ h1 {
   grid-row: 2/3;
 }
 
-.nosotros {
+main .nosotros {
   padding: 50% 2% 2% 2%;
 }
-
-.centradoFlex {
+main .centradoFlex {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 3%;
   flex-direction: column;
 }
-
-.centrado {
+main .centrado {
   text-align: center;
   margin-top: 3%;
 }
+main .fondo {
+  background-color: #d4eaf7;
+}
 
-.serviciosBox {
+main .serviciosBox {
   border-style: solid;
   border-color: black;
   margin: 5px;
   padding-top: 10%;
   border-radius: 25px;
 }
-
-.serviciosH:hover {
-  background-color: rgba(138, 138, 138, 0.673);
+main section.serviciosH {
+  clip-path: circle(100%);
+  transition: clip-path 1s ease-in-out 5ms;
+}
+main section.serviciosH:hover {
+  background: none;
+  background-color: #cccbc8;
+  border-style: none;
+  clip-path: circle(50%);
+}
+main section.serviciosHh2 {
+  color: #00668c;
+}
+main section.serviciosHp {
+  color: #2196F3;
+}
+main section.g-radial {
+  background: radial-gradient(circle, #757de8, #2196F3, #00668c);
+}
+main section.g-linearV {
+  background: linear-gradient(to bottom, #00668c, #d4eaf7);
+}
+main section.g-linearH {
+  background: linear-gradient(to right, #757de8, #f5f5f5);
 }
 
 @media only screen and (max-width: 1200px) {

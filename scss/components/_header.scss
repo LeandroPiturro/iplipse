@@ -2,6 +2,13 @@ header {
     .logo{
         width: 200px;
         margin: 1.5% 1%;
+        transition-property: transform;
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 5ms;
+        &:hover{
+            transform: rotate(-8deg);
+        }
     }
     .navText{
         font-size: x-large;
