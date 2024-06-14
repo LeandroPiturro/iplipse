@@ -11,3 +11,9 @@
 .gridInput{
     @include grid(repeat(5, 40px), 1fr 1fr, 5px, 0);
 }
+.navbar-collapse{
+    background: $iplipse-blue;
+}
+.navbar .navbar-collapse {
+    text-align: center;
+}
